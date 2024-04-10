@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+
+div[id^="frpbox"]
+{
+    border: 1px solid gray;
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.detbox {
+	 border: 1px solid #ddd; /* إضافة حدود */
+        border-radius: 8px; /* تدوير الحواف */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل */
+}
+
+.boxfrpbrand{
+	    border: 1px solid #ddd; /* إضافة حدود */
+        border-radius: 8px; /* تدوير الحواف */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل */
+        background-color: #eeedf5; /* لون الخلفية */
+      
+
+}
+    /* تنسيق العنصر الأب */
+    .card-announcement {
+	
+        border: 1px solid #ddd; /* إضافة حدود */
+        border-radius: 8px; /* تدوير الحواف */
+        padding: 20px; /* تباعد الحواف الداخلية */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل */
+        background-color: #eeedf5; /* لون الخلفية */
+      
+
+    }
+
+    /* تنسيق العناصر الداخلية */
+    .news-list {
+        margin-bottom: 20px; /* تباعد بين العناصر */
+    }
+
+    .news-text {
+        font-size: 16px; /* حجم النص */
+        color: #333; /* لون النص */
+        margin-bottom: 5px; /* تباعد بين النصوص */
+    }
+
+    .news-date {
+        font-size: 14px; /* حجم النص */
+        color: #888; /* لون النص */
+    }
+  .glowing-dot {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0 0 10px red;
+        animation: glowing 1.5s infinite;
+	  z-index: 1;
+    }
+
+    @keyframes glowing {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+/* تكبير حجم الأيقونة وتطبيق تأثير حركي عند تحويل الماوس عليها */
+#telegram-icon:hover,
+#whatsapp-icon:hover,
+#facebook-icon:hover,
+#telephone-icon:hover {
+  transform: scale(1.2); /* تكبير حجم الأيقونة */
+  transition: transform 0.3s ease; /* تطبيق تأثير حركي */
+}
+/* تعديل لون الأيقونة عند تحويل الماوس عليها */
+#add-funds-icon:hover {
+  color: #ff0000; /* لون يعكس أنه رابط مؤشر عليه */
+}
+.titltab{
+	background: #7460ee;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.tabresp{
+	border: 1px solid #7460ee;
+	padding: 12px;
+	border-radius: 10px;
+}
+.table-striped>tbody>tr:nth-of-type(odd){
+	--bs-table-accent-bg:rgb(116 96 238 / 19%);
+}
+
+    #countdown {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+        transition: all 0.3s ease-in-out; /* تأثير الانتقال */
+    }
+/* عداد اختفاء بطاقة نجاح الحدف  */
+#countdown {
+        font-size: 28px;
+        font-weight: bold;
+        color: red;
+        transition: all 0.3s ease-in-out; /* تأثير الانتقال */
+    }
+
+    .countdown-fade {
+        opacity: 0;
+    }
+/* Set the height and internal padding of the tabs ticket */
+#list-tabsub-ticket a {
+  height: 50px; /* Tab height */
+  padding: 15px; /* Internal padding */
+  position: relative; /* Set position to relative for the arrow positioning */
+}
+
+/* Change the background color of the tabs */
+#list-tabsub-ticket a.active {
+  background-color: #28b779; /* Active tab background color */
+  border-color: #007bff; /* Active tab border color */
+}
+
+/* Style the arrow */
+#list-tabsub-ticket a.active .arrow {
+  position: absolute; /* Set position to absolute for the arrow */
+  top: calc(50% - 5px); /* Center the arrow vertically */
+  right: 5px; /* Adjust the distance from the right side */
+  border: solid #fff; /* Set arrow border color */
+  border-width: 0 2px 2px 0; /* Set arrow dimensions */
+  display: inline-block; /* Set display to inline-block */
+  padding: 3px; /* Add some padding */
+  transform: rotate(-45deg); /* Rotate the arrow */
+  content: ''; /* Add content */
+}
+
+/* Hide arrow by default */
+#list-tabsub-ticket a .arrow {
+  display: none; /* Hide arrow by default */
+}
+
+/* Display arrow when tab is active */
+#list-tabsub-ticket a.active .arrow {
+  display: inline-block; /* Display arrow when tab is active */
+}

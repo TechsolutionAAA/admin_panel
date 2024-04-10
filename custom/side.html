@@ -1,0 +1,135 @@
+<aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav" class="pt-4">
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="server-index.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-view-dashboard"></i
+                  ><span class="hide-menu">Dashboard</span></a
+                >
+              </li>
+         <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-receipt"></i
+                  ><span class="hide-menu">Order now</span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="imei-order.html" class="sidebar-link"
+                      ><i class="mdi mdi-note-outline"></i
+                      ><span class="hide-menu"> New order </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="history-order-cust.html" class="sidebar-link"
+                      ><i class="mdi mdi-note-plus"></i
+                      ><span class="hide-menu"> History orders</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+             <li class="sidebar-item">
+                <a
+                  class="sidebar-link "
+                  href="imei-services.html"
+                  ><i class="mdi mdi-receipt"></i
+                  ><span class="hide-menu">Services </span></a
+                >
+             
+              </li>
+             <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-receipt"></i
+                  ><span class="hide-menu">Tickets </span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link"
+                      ><i class="mdi mdi-note-outline"></i
+                      ><span class="hide-menu"> Submit Ticket </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link"
+                      ><i class="mdi mdi-note-plus"></i
+                      ><span class="hide-menu"> My Tickets</span></a
+                    >
+                  </li>
+				
+                </ul>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="#"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-blur-linear"></i
+                  ><span class="hide-menu">Invoices</span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-receipt"></i
+                  ><span class="hide-menu">Add credits </span></a
+                >
+				                </li>
+
+                  <li class="sidebar-item">
+                    <a href="edit-my-acccustm.html" class="sidebar-link"
+                      ><i class="mdi mdi-note-outline"></i
+                      ><span class="hide-menu"> Setting </span></a
+                    >
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link"
+                      ><i class="mdi mdi-note-plus"></i
+                      ><span class="hide-menu"> Downlaod files </span></a
+                    >
+                  </li>
+                
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="#"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-relative-scale"></i
+                  ><span class="hide-menu">log out</span></a
+                >
+              </li>
+            
+             
+            
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+
+
+
+
+
+<!-- Alert Card -->
+<div id="paymentAlert" class="alert alert-danger position-fixed top-50 start-50 translate-middle d-none" role="alert" style=" border: 2px solid red; border-radius: 14px">
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-50" style="border-radius:14px"></div> <!-- Backdrop -->
+  <div class="position-relative z-index-1 text-center p-4">
+    <i class="bi bi-exclamation-triangle-fill fs-1 mb-3"></i> <!-- Bootstrap Icon -->
+    <p class="mb-0" style="color: red; font-weight: bold; font-size: 18px;">You can't add payment right now, please contact site admin</p>
+    <button type="button" class="btn btn-primary mt-3" onclick="closePaymentAlert()">OK</button> <!-- OK Button -->
+  </div>
+</div>
