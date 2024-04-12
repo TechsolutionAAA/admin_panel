@@ -1,87 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ticket</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="./src/mystyle.css">
-</head>
-<body>
-  <div class="box">
-    <div class="sidebar">
-      <div class="title"><img src="./assets/images/logo.png"></div>
-      <a class="list-items" href="./index.html"><i class="fa fa-fw fa-user"></i><div class="list_item">User/clients</div></a>
-      <a class="list-items" href="./order.html"><i class="fa fa-fw fa-list"></i><div class="list_item">Order</div></a>
-      <a class="list-items" href="./product.html"><i class="fa fa-fw fa-shopping-cart"></i><div class="list_item">Product/Services</div></a>
-      <a class="list-items click" href="./ticket.html"><i class="fa fa-fw fa-users"></i><div class="list_item">Ticket</div></a>
-      <a class="list-items" href="./credit.html"><i class="fa fa-fw fa-user"></i><div class="list_item">Credit Allocation</div></a>
-      <a class="list-items" href="./notification.html"><i class="fa fa-fw fa-message"></i><div class="list_item">Notifications</div></a>
-      <a class="list-items" href="/annoncement"><i class="fa fa-fw fa-user"></i><div class="list_item">Annoncement</div></a>
-      <a class="list-items" href="./upload.html"><i class="fa fa-fw fa-upload"></i><div class="list_item">Files Upload</div></a>
-      <a class="list-items border-btm" href="/setting"><i class="fa fa-fw fa-gear"></i><div class="list_item">General Settings</div></a>
-    </div>
-    
-    <div class="header">
-      <div class="header_content">
-        <div class="search_box">
-          <input type="text" class="form-control">
-        </div>
-        <div class="header_action">
-          <div class="menu_action"><i class="fa fa-bell"></i></div>
-          <div class="menu_action"><i class="fa fa-message"></i></div>
-          
-          <div class="dropdown">
-            <div class="menu_action avatar dropbtn"><img src="./assets/images/users/profile.png"></div>
-            <div class="dropdown-content">
-              <a class="dropdown-item" href="edit-my-acccustm.html"><i class="fa fa-user me-1 ms-1"></i> My Profile</a>
-              <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-wallet me-1 ms-1"></i> My Balance</a>
-              <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-envelope me-1 ms-1"></i> Inbox</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="edit-my-acccustm.html"><i class="fa fa-gear me-1 ms-1"></i> Account
-                Setting</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off me-1 ms-1"></i> Logout</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ticket</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/mystyle.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="sidebar">
+        <div class="title"><img src="./assets/images/logo.png" /></div>
+        <a class="list-items" href="./index.html"
+          ><i class="fa fa-fw fa-user"></i>
+          <div class="list_item">User/clients</div></a
+        >
+        <a class="list-items" href="./order.html"
+          ><i class="fa fa-fw fa-list"></i>
+          <div class="list_item">Order</div></a
+        >
+        <a class="list-items" href="./product.html"
+          ><i class="fa fa-fw fa-shopping-cart"></i>
+          <div class="list_item">Product/Services</div></a
+        >
+        <a class="list-items click" href="./ticket.html"
+          ><i class="fa fa-fw fa-users"></i>
+          <div class="list_item">Ticket</div></a
+        >
+        <a class="list-items" href="./credit.html"
+          ><i class="fa fa-fw fa-user"></i>
+          <div class="list_item">Credit Allocation</div></a
+        >
+        <a class="list-items" href="./notification.html"
+          ><i class="fa fa-fw fa-message"></i>
+          <div class="list_item">Notifications</div></a
+        >
+        <a class="list-items" href="/annoncement"
+          ><i class="fa fa-fw fa-user"></i>
+          <div class="list_item">Annoncement</div></a
+        >
+        <a class="list-items" href="./upload.html"
+          ><i class="fa fa-fw fa-upload"></i>
+          <div class="list_item">Files Upload</div></a
+        >
+        <a class="list-items border-btm" href="./setting.html"
+          ><i class="fa fa-fw fa-gear"></i>
+          <div class="list_item">General Settings</div></a
+        >
+      </div>
+
+      <div class="header">
+        <div class="header_content">
+          <div class="search_box">
+            <input type="text" class="form-control" />
+          </div>
+          <div class="header_action">
+            <div class="menu_action"><i class="fa fa-bell"></i></div>
+            <div class="menu_action"><i class="fa fa-message"></i></div>
+
+            <div class="dropdown">
+              <div class="menu_action avatar dropbtn">
+                <img src="./assets/images/users/profile.png" />
+              </div>
+              <div class="dropdown-content">
+                <a class="dropdown-item" href="edit-my-acccustm.html"
+                  ><i class="fa fa-user me-1 ms-1"></i> My Profile</a
+                >
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><i class="fa fa-wallet me-1 ms-1"></i> My Balance</a
+                >
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><i class="fa fa-envelope me-1 ms-1"></i> Inbox</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="edit-my-acccustm.html"
+                  ><i class="fa fa-gear me-1 ms-1"></i> Account Setting</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><i class="fa fa-power-off me-1 ms-1"></i> Logout</a
+                >
+              </div>
             </div>
           </div>
-          
+        </div>
+      </div>
+      <div class="content">
+        <div class="search_member">
+          <div class="search_member_header">Search</div>
+          <div class="search_member_content_box">
+            <div class="left_box">
+              <div class="input_box">
+                <span class="input-text">Subject</span>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="input_box">
+                <span class="input-text">Department</span>
+                <select class="form-select">
+                  <option>All Department</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="input_box">
+                <span class="input-text">User</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="UserName"
+                />
+              </div>
+              <div class="input_box">
+                <span class="input-text">Assigned To</span>
+                <select class="form-select">
+                  <option>--All--</option>
+                  <option>Test</option>
+                  <option>ManhIT</option>
+                  <option>Demo</option>
+                </select>
+              </div>
+              <div class="input_box">
+                <span class="input-text">Assigned To</span>
+                <input type="text" name="" class="form-control" id="" />
+              </div>
+              <div class="input_box">
+                <span class="input-text">Order Code</span>
+                <input type="text" name="" class="form-control" id="" />
+              </div>
+            </div>
+          </div>
+          <div class="search_member_footer">
+            <div class="left_box">
+              <button class="btn btn-primary mt-1">Search</button>
+              <button class="btn btn-secondary mt-1">Reset</button>
+            </div>
+          </div>
+        </div>
+        <div class="members_list">
+          <div class="search_member_header">
+            <div class="members_list_header_title">Waiting Tickets</div>
+          </div>
+          <div class="members_list_content">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id=""
+                      name=""
+                      value=""
+                    />
+                  </th>
+                  <th>Ticket ID</th>
+                  <th>Priority</th>
+                  <th>Date</th>
+                  <th>Department</th>
+                  <th>Subject</th>
+                  <th>User</th>
+                  <th>Last Reply</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
-    <div class="content">
-      
-      <div class="search_member">
-        <div class="search_member_header">
-          Add Service Group
-        </div>
-        <div class="search_member_content">
-          <div class="left_box">
-            <div class="input_box">
-              <span class="input-text">Name</span>
-              <input type="text" class="form-control">
-            </div>
-            <div class="input_box">
-              <span class="input-text">Status</span>
-              <select class="form-select">
-                <option>Active</option>
-                <option>Inactive</option>
-              </select>
-            </div>
-          </div>
-          <div class="right_box">
-          </div>
-        </div>
-        <div class="search_member_footer">
-          <div class="left_box">
-            <button class="btn btn-success"><i class="fa fa-check"></i> Submit</button>
-            <button class="btn btn-danger"><i class="fa fa-xmark"></i> Cancel</button>
-          </div>
-          <div class="right_box"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

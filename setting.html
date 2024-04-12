@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/mystyle.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="sidebar">
+        <div class="title"><img src="./assets/images/logo.png" /></div>
+        <a class="list-items" href="./index.html"
+          ><i class="fa fa-fw fa-user"></i>
+          <div class="list_item">User/clients</div></a
+        >
+        <a class="list-items" href="./order.html"
+          ><i class="fa fa-fw fa-list"></i>
+          <div class="list_item">Order</div></a
+        >
+        <a class="list-items" href="./product.html"
+          ><i class="fa fa-fw fa-shopping-cart"></i>
+          <div class="list_item">Product/Services</div></a
+        >
+        <a class="list-items" href="./ticket.html"
+          ><i class="fa fa-fw fa-users"></i>
+          <div class="list_item">Ticket</div></a
+        >
+        <a class="list-items" href="./credit.html"
+          ><i class="fa fa-fw fa-user"></i>
+          <div class="list_item">Credit Allocation</div></a
+        >
+        <a class="list-items" href="./notification.html"
+          ><i class="fa fa-fw fa-message"></i>
+          <div class="list_item">Notifications</div></a
+        >
+        <a class="list-items" href="/annoncement"
+          ><i class="fa fa-fw fa-user"></i>
+          <div class="list_item">Annoncement</div></a
+        >
+        <a class="list-items" href="./upload.html"
+          ><i class="fa fa-fw fa-upload"></i>
+          <div class="list_item">Files Upload</div></a
+        >
+        <a class="list-items click border-btm" href="./setting.html"
+          ><i class="fa fa-fw fa-gear"></i>
+          <div class="list_item">General Settings</div></a
+        >
+      </div>
+
+      <div class="header">
+        <div class="header_content">
+          <div class="search_box">
+            <input type="text" class="form-control" />
+          </div>
+          <div class="header_action">
+            <div class="menu_action"><i class="fa fa-bell"></i></div>
+            <div class="menu_action"><i class="fa fa-message"></i></div>
+
+            <div class="dropdown">
+              <div class="menu_action avatar dropbtn">
+                <img src="./assets/images/users/profile.png" />
+              </div>
+              <div class="dropdown-content">
+                <a class="dropdown-item" href="edit-my-acccustm.html"
+                  ><i class="fa fa-user me-1 ms-1"></i> My Profile</a
+                >
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><i class="fa fa-wallet me-1 ms-1"></i> My Balance</a
+                >
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><i class="fa fa-envelope me-1 ms-1"></i> Inbox</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="edit-my-acccustm.html"
+                  ><i class="fa fa-gear me-1 ms-1"></i> Account Setting</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><i class="fa fa-power-off me-1 ms-1"></i> Logout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Quick-tab-pane"
+              aria-selected="true"
+            >
+              Site Settings
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Add_New-tab-pane"
+              aria-selected="false"
+            >
+              Payment Settings
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="List-tab-pane"
+              aria-selected="false"
+            >
+              Mail Settings
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="disabled-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#disabled-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Add_Service-tab-pane"
+              aria-selected="false"
+            >
+              Chat Settings
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="api-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#api-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Add_Service-tab-pane"
+              aria-selected="false"
+            >
+              API Settings
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="social-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#social-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Add_Service-tab-pane"
+              aria-selected="false"
+            >
+              Social Settings
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="fraud-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#fraud-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Add_Service-tab-pane"
+              aria-selected="false"
+            >
+              Fraud Protection
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active p-3"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <div class="search_member">
+              <div class="search_member_header">Config Management</div>
+              <div class="search_member_content">
+                <div class="search_left_box">
+                  <div class="">Signup settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Auto activate user on signup?</span
+                    >
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1"
+                          name="optradio1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio1">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio2"
+                          name="optradio1"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Allow new registration</span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio3"
+                          name="optradio2"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio3">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio4"
+                          name="optradio2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio4">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Allow new registration</span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio5"
+                          name="optradio3"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio5">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio6"
+                          name="optradio3"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio6">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Uesr activated only by admin</span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio5"
+                          name="optradio4"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio7">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio6"
+                          name="optradio4"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio8">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div>Site settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text">Site name</span>
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control"
+                      value="demo.gsmgub.me"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Notification e-mail ids for new signup</span
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control"
+                      value="sample@sample.com"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Interval to send Api Credit Notify mail in days</span
+                    >
+                    <input
+                      type="text"
+                      value="3"
+                      name=""
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >No of times to send the reminder for Api Credit
+                      Notify</span
+                    >
+                    <input
+                      type="text"
+                      value="3"
+                      name=""
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Admin notification email</span>
+                    <input
+                      type="text"
+                      value="sample@sample.com"
+                      name=""
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Auto Submit Api Order</span>
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control"
+                      value="1"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Contact Us email address</span>
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control"
+                      value="sample@sample.com"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Notification e-mail ids for payments and
+                      transactions</span
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control"
+                      value="sample@sample.com"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Default Signature</span>
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-control"
+                      cols="30"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Invoice Site Address</span>
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-control"
+                      cols="30"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Invoice Site Address</span>
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control"
+                      value="10"
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >IP Access Blocked Notification Email</span
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control"
+                      value="sample@sample.com"
+                      id=""
+                    />
+                  </div>
+
+                  <div class="input_box">
+                    <span class="input-text">Uesr activated only by admin</span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio6"
+                          name="optradio5"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio8">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio6"
+                          name="optradio5"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio9">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Debit user on duplicate imei [completed with type
+                      database]
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio7"
+                          name="optradio6"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio9">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio7"
+                          name="optradio6"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio10">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Show Flag</span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio8"
+                          name="optradio7"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio10"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio8"
+                          name="optradio7"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio11">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Place Order Template style</span>
+                    <select name="" class="form-select" id="">
+                      <option value="">Normal dropdown</option>
+                      <option value="">Expanded Service List</option>
+                    </select>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Allow to login from user country only
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio9"
+                          name="optradio8"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio11"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio9"
+                          name="optradio8"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio12">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Database backup receiver emails</span
+                    >
+                    <input type="text" name="" class="form-control" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Show WebShop Products </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio12"
+                          name="optradio9"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio12"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio13"
+                          name="optradio9"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio13">NO</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input_box">
+                    <span class="input-text">WebShop URL</span>
+                    <input type="text" name="" class="form-control" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Display Captcha </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio14"
+                          name="optradio10"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio14"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio15"
+                          name="optradio10"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio15">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Captcha Method</span>
+                    <select name="" class="form-select" id="">
+                      <option value="">Image</option>
+                      <option value="">Recaptcha</option>
+                    </select>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Google Captcha Secret Key</span>
+                    <input type="text" name="" class="form-control" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Google Captcha Site Key</span>
+                    <input type="text" name="" class="form-control" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Disable 2 step verfication for login
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio16"
+                          name="optradio11"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio16"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio17"
+                          name="optradio11"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio17">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">HTML Meta Tags</span>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id=""
+                      cols="30"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Transfer Fund Option for Users</span
+                    >
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-control"
+                      cols="30"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >IPs from which the cron jobs run separated by comma</span
+                    >
+                    <input type="text" name="" class="form-control" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Footer Address</span>
+                    <input type="text" name="" class="form-control" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Hide Imei Services for guests
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio19"
+                          name="optradio12"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio19"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio20"
+                          name="optradio12"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio20">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Hide File Services for guests
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio21"
+                          name="optradio13"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio21"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio22"
+                          name="optradio13"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio22">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Hide Server Services for guests
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio23"
+                          name="optradio14"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio23"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio24"
+                          name="optradio14"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio24">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Allow Place order template change
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio25"
+                          name="optradio15"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio25"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio26"
+                          name="optradio15"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio26">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Use Index Promo page </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio27"
+                          name="optradio16"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio27"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio28"
+                          name="optradio16"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio28">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Force OTP code for login </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio29"
+                          name="optradio17"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio29"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio30"
+                          name="optradio17"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio30">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search_member_footer">
+                <div class="left_box">
+                  <button class="btn btn-primary">Update Config</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade p-3"
+            id="profile-tab-pane"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            tabindex="0"
+          >
+            <div class="search_member">
+              <div class="search_member_header">Config Management</div>
+              <div class="search_member_content">
+                <div class="search_left_box">
+                  <div class="">General settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Default payment gateway percentage fee</span
+                    >
+                    <input type="text" value="2" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Default payment gateway flat fee</span
+                    >
+                    <input type="text" value="2" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Gift payment gateway percentage fee</span
+                    >
+                    <input type="text" value="2" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Gift payment gateway flat fee</span
+                    >
+                    <input type="text" value="2" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Allow user to update currency
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1"
+                          name="optradio"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio1">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio2"
+                          name="optradio"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Add fund supported currencies</span
+                    >
+                    <input type="text" value="USD,EUR" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Allow user to update currency
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio2"
+                          name="optradio1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio2">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio3"
+                          name="optradio1"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio3">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Transfer Funds Allowed For</span>
+                    <select name="" class="form-select" id="">
+                      <option value="all">All</option>
+                      <option value="none">None</option>
+                      <option value="restricted">Restricted</option>
+                    </select>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Who pays the fees for funds transfer: Sender /
+                      Receiver</span
+                    >
+                    <select name="" class="form-select" id="">
+                      <option value="sender">Sender</option>
+                      <option value="receiver">Receiver</option>
+                    </select>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Add fund invoice item name in Payment Gateway</span
+                    >
+                    <input type="text" name="" class="form-control" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Status</span>
+                    <select class="form-select">
+                      <option>Active</option>
+                      <option>Inactive</option>
+                    </select>
+                  </div>
+                  <div>Paypal settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text">Add fund via PayPal Txn Id </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio5"
+                          name="optradio2"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio5">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio6"
+                          name="optradio2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio6">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Enable PayPal Txn Id funding for all
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio7"
+                          name="optradio3"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio7">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio8"
+                          name="optradio3"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio8">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Enable PayPal Txn Id funding for new users by default
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio9"
+                          name="optradio4"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio9">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio10"
+                          name="optradio4"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio10">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search_member_footer">
+                <div class="left_box">
+                  <button class="btn btn-primary">
+                    <i class="fa fa-check"></i> Update Config
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade p-3"
+            id="contact-tab-pane"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+            tabindex="0"
+          >
+            <div class="search_member">
+              <div class="search_member_header">Config Management</div>
+              <div class="search_member_content">
+                <div class="search_left_box">
+                  <div class="">Send Test Mail</div>
+                  <hr />
+
+                  <div class="input_box">
+                    <span class="input-text">Send to e-mail</span>
+                    <input type="text" value="" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Mail Subject</span>
+                    <input
+                      type="text"
+                      value="sample mail to check settings"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Mail Subject</span>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id=""
+                      cols="30"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <buttton class="btn btn-primary">Send Test Mail</buttton>
+                  <div>Mail settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text">SMTP Host</span>
+                    <input type="text" value="local" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">SMTP Port</span>
+                    <input type="text" value="22" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">SMTP Username</span>
+                    <input type="text" value="qweqwe" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">SMTP Password</span>
+                    <input type="text" value="qweqwe" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Encryption Protocol</span>
+                    <input type="text" value="tls" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">From Email</span>
+                    <input
+                      type="text"
+                      value="test@rter.tyu"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">From Name</span>
+                    <input type="text" value="qweqw" class="form-control" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >IMEI place order confirmation
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1"
+                          name="optradio"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio1">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio2"
+                          name="optradio"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">IMEI order completed </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio3"
+                          name="optradio1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio3">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio4"
+                          name="optradio1"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio4">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">IMEI order rejected </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio5"
+                          name="optradio2"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio5">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio6"
+                          name="optradio2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio6">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >File place order confirmation
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio7"
+                          name="optradio3"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio7">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio8"
+                          name="optradio3"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio8">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">File order completed </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio9"
+                          name="optradio4"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio9">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio10"
+                          name="optradio4"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio10">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">File order rejected </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio11"
+                          name="optradio5"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio11"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio12"
+                          name="optradio5"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio12">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Server place order confirmation
+                    </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio13"
+                          name="optradio6"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio13"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio14"
+                          name="optradio6"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio14">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Server order completed </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio15"
+                          name="optradio7"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio15"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio16"
+                          name="optradio7"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio16">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Server order rejected </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio17"
+                          name="optradio8"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio17"
+                          >YES</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio18"
+                          name="optradio8"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio18">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search_member_footer">
+                <div class="left_box">
+                  <button class="btn btn-primary">Update Config</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade p-3"
+            id="disabled-tab-pane"
+            role="tabpanel"
+            aria-labelledby="disabled-tab"
+            tabindex="0"
+          >
+            <div class="search_member">
+              <div class="search_member_header">Add Service Group</div>
+              <div class="search_member_content">
+                <div class="search_left_box">
+                  <div>Chat settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text">Enable Zopim Chat</span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1"
+                          name="optradio"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio1">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio2"
+                          name="optradio"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Zopim Embed Code</span>
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-control"
+                      cols="30"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="search_member_footer">
+                <div class="left_box">
+                  <button class="btn btn-primary">Update Config</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade p-3"
+            id="api-tab-pane"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+            tabindex="0"
+          >
+            <div class="search_member">
+              <div class="search_member_header">Config Management</div>
+              <div class="search_member_content">
+                <div class="search_left_box">
+                  <div>Api request settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text">Cycle time in min</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="2"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Max Request Per Cycle in count</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="1000"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Block request timing in min</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="2"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="search_member_footer">
+                <div class="left_box">
+                  <button class="btn btn-primary">Update Config</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade p-3"
+            id="social-tab-pane"
+            role="tabpanel"
+            aria-labelledby="social-tab"
+            tabindex="0"
+          >
+            <div class="search_member">
+              <div class="search_member_header">Config Management</div>
+              <div class="search_member_content">
+                <div class="search_left_box">
+                  <div>Social Networking settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text">Facebook</span>
+                    <input type="text" class="form-control" name="" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Pinterest</span>
+                    <input type="text" class="form-control" name="" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Twitter</span>
+                    <input type="text" class="form-control" name="" id="" />
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text">Google +</span>
+                    <input type="text" class="form-control" name="" id="" />
+                  </div>
+                </div>
+              </div>
+              <div class="search_member_footer">
+                <div class="left_box">
+                  <button class="btn btn-primary">Update Config</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade p-3"
+            id="fraud-tab-pane"
+            role="tabpanel"
+            aria-labelledby="fraud-tab"
+            tabindex="0"
+          >
+            <div class="search_member">
+              <div class="search_member_header">Config Management</div>
+              <div class="search_member_content">
+                <div class="search_left_box">
+                  <div>Fraud Protection settings</div>
+                  <hr />
+                  <div class="input_box">
+                    <span class="input-text">Enable fraud protection? </span>
+                    <div class="check">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1"
+                          name="optradio"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio1">YES</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio2"
+                          name="optradio"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <span class="input-text"
+                      >Paypal blocked countries, enter counties as comma
+                      separated</span
+                    >
+                    <select name="" class="form-select" id="">
+                      <option value="">select</option>
+                      <option value="">...</option>
+                      <option value="">>>></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search_member_footer">
+                <div class="left_box">
+                  <button class="btn btn-primary">Update Config</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
